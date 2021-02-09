@@ -25,7 +25,7 @@ export function getUsers() {
     dispatch(getUsersStart());
     try {
       const res = await axios.get(
-        'http://localhost:8000/users'
+        'https://my-json-server.typicode.com/joseluisjk/cloudappiTestApi/users'
       );
       if (res.error) {
         throw (res.error);
@@ -65,7 +65,7 @@ export function userDetails(id) {
     dispatch(getUserDetailsStart());
     try {
       const res = await axios.get(
-        `http://localhost:8000/users/${id}`,
+        `https://my-json-server.typicode.com/joseluisjk/cloudappiTestApi/users/${id}`,
       );
       if (res.error) {
         throw (res.error);
@@ -104,7 +104,7 @@ export function deleteUser(id) {
     dispatch(deleteUserStart());
     try {
       const res = await axios.delete(
-        `http://localhost:8000/users/${id}`,
+        `https://my-json-server.typicode.com/joseluisjk/cloudappiTestApi/users/${id}`,
       );
       if (res.error) {
         throw (res.error);
@@ -141,7 +141,7 @@ export function updateUser(id,data) {
     dispatch(updateUserStart());
     try {
       const res = await axios.put(
-        `http://localhost:8000/users/${id}`,
+        `https://my-json-server.typicode.com/joseluisjk/cloudappiTestApi/users/${id}`,
         {
           firstname: data.firstname,
           lastname: data.lastname,
@@ -191,7 +191,7 @@ export function createUser(data) {
     dispatch(createUserStart());
     try {
       const res = await axios.post(
-        'http://localhost:8000/users',
+        'https://my-json-server.typicode.com/joseluisjk/cloudappiTestApi/users',
         {
           firstname: data.firstname,
           lastname: data.lastname,

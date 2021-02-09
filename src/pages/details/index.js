@@ -7,7 +7,6 @@ import { faTrash, faUserEdit } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
 
 import './index.scss';
-import { Fragment } from "react";
 
 class Details extends React.Component {
   componentDidMount() {
