@@ -1,6 +1,5 @@
 {
   "name": "cloudappi-test",
-  "homepage": "http://joseluisjk.github.io/cloudappiTest",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
