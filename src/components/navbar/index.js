@@ -21,11 +21,6 @@ class NavBar extends React.Component {
               <NavDropdown.Item target="_blank" href="https://firebase.google.com/?hl=es">FIREBASE</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          {/* <NavDropdown title="Filters" id="basic-nav-dropdown">
-            <NavDropdown.Item onClick={this.props.orderByName() }>Order by age</NavDropdown.Item>
-            <NavDropdown.Item>Order by country</NavDropdown.Item>
-            <NavDropdown.Item>Order by name</NavDropdown.Item>
-          </NavDropdown> */}
           <Button className="userList_AddButton" onClick={() => { this.props.createUser() }}>
             Add user
             <FontAwesomeIcon icon={faPlusCircle} />

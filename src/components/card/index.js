@@ -12,6 +12,7 @@ class CardList extends React.Component {
             <div className="avatar">
               <img
                 src={`https://robohash.org/${item.firstname + item.lastname}?set=set5&size=150x150`}
+                alt="Profile pic"
               />
             </div>
             <div className="basic-info">
