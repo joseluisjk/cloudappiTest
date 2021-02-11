@@ -1,84 +1,59 @@
-.userlist_container {
-  padding: 1rem;
-  width: 100%;
+.detailBody__ButtonRow {
+  justify-content: space-around;
 
-  input {
-    height: 32px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 5px;
-    border: 1px solid black;
-
-    &:focus {
-      outline: 0;
-    }
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 1rem;
-  
-    a {
-      display: flex;
-      background-color: #49C6E5;
-      border-radius: 3px;
-      margin-bottom: 1rem;
-      width: 100%;
-      border: 1px solid #353A47;
-      height: 166px;
-      width: auto;
-      margin: 1rem;
-      padding: 2rem;
-      text-decoration: none;
-      color: #353A47;
-
-      &:hover {
-        opacity: 0.8;
-        cursor: pointer;
-      }
-
-      @media(min-width: 768px) {
-        width: 37.5%;
-      }
-
-      img {
-        max-height: 150px;
-        max-width: 150px;
-      }
-
-      .userList__UserData {
-        h3 {
-          display: flex;
-          align-items: center;
-
-          img {
-            margin-left: 6px;
-          }
-        }
-      }
-    }
-  
-    a:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-
-  button {
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    background-color: transparent;
-    border: none;
-    font-size: 40px;
-  
-    &:focus, &:hover {
-      outline: 0;
-      opacity: 0.8;
-      cursor: pointer;
-    }
+  svg {
+    margin-left: 8px;
   }
 }
 
+.detailBody__DataRow {
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  img {
+    align-self: center;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: #8BD7D2;
+    border-radius: 50%;
+  }
+}
+
+.info {
+  padding: 16px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  border-bottom: 1px solid #8BD7D2;
+
+  div:first-of-type {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 11px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+  }
+
+  .data {
+    flex: 1;
+    white-space: nowrap;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 20px;
+  }
+}
+
+.createBody__Button {
+  margin-top: 1rem;
+}
+
+.createBody__Container {
+  display: flex;
+  flex-direction: column;
+}

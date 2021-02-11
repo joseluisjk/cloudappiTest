@@ -1,0 +1,21 @@
+.userList_SearchBox {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+
+  input {
+    margin-left: 0.5rem;
+  }
+}
+
+.userList_AddButton {
+  &:focus, &:hover {
+    outline: 0;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  svg {
+    margin-left: 6px;
+  }
+}

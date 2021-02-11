@@ -1,7 +1,8 @@
 const initialState = {
   loading: false,
   error: "",
-  data: {}
+  data: {},
+  details: {}
 }
 
 export function getUsers(state = initialState, action) {
@@ -41,7 +42,7 @@ export function userDetails(state = initialState, action) {
       return {
         ...state,
         loading: false,
-        data: action.payload
+        details: action.payload
       }
     case "GET_USER_DETAILS_ERROR":
       return {

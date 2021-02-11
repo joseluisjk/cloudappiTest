@@ -1,0 +1,111 @@
+@keyframes cardShow {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.list_Row {
+  justify-content: center;
+
+  .card__Loading {
+    width: 150px;
+    height: 150px;
+    margin-top: 3rem;
+    border: 0.25em solid white;
+    border-right-color: transparent;
+  }
+
+  .list_Col {
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 0 0 1px #ddd inset;
+    position: relative;
+    background-color: white;
+    animation: cardShow 1s ease;
+  
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+   
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 20px;
+  
+      .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        font-size: 0;
+        margin-right: 12px;
+    
+        img {
+          width: 100%;
+          background-color: #8BD7D2;
+        }
+      }
+  
+      .basic-info {
+        flex: 1;
+        overflow: hidden;
+        white-space: nowrap;
+  
+        .nick {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 15px;
+          margin-bottom: 2px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+  
+        .fullname {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: rgba(#333, .6);
+          font-size: 14px;
+        }
+      }
+    }
+  
+    .info {
+      padding: 16px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+      border-bottom: 1px solid #8BD7D2;
+  
+      &:last-of-type {
+        border-bottom: 0;
+      }
+  
+      .title {
+        font-size: 11px;
+        font-weight: bold;
+        color: rgba(0,0,0,0.4);
+        letter-spacing: 1px;
+      }
+  
+      .data {
+        flex: 1;
+        white-space: nowrap;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 20px;
+      }
+    }
+  }
+}

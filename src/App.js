@@ -4,29 +4,22 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import { Container } from 'react-bootstrap';
 
 import Dashboard from './pages/dashboard';
-import Details from './pages/details';
-import Create from './pages/create';
 import './App.scss';
 
 function App() {
   return (
-    <div className="main_container">
+    <Container fluid className="main_container">
       <Router>
         <Switch>
-          <Route path="/create">
-            <Create />
-          </Route>
-          <Route path="/details">
-            <Details />
-          </Route>
           <Route path="/">
             <Dashboard />
           </Route>
         </Switch>
       </Router>
-    </div>
+    </Container>
   );
 }
 

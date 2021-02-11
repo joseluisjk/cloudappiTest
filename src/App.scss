@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap";
+
 #root {
   height: 100vh;
   overflow: auto;
@@ -9,8 +11,15 @@
 }
 
 .main_container {
-  width: 100%;
   padding: 0;
   height: 100%;
   display: flex;
+
+  .row {
+    margin: 0;
+
+    .col {
+      padding: 0;
+    }
+  }
 }
