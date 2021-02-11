@@ -202,7 +202,7 @@ class CreateBody extends React.Component {
           this.props.isInput &&
             (
               <Button className="createBody__Button" onClick={() => { this.props.userFormHandler(this.state.formObject) }}>
-                Actualizar
+                Save
               </Button>
             )
         }
